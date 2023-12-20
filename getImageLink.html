@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+</head>
+<body>
+    <input type="file" id="img-input">
+
+    <img id="img-from-local-storage">
+
+    <script>
+        const imageInput = document.getElementById('img-input');
+        imageInput.addEventListener('change',e =>{
+            let image = [];
+            image = e.target.files[0];
+            let x = image.name;
+            console.log(x);
+            const reader = new FileReader();
+            console.log(reader.result);
+            reader.addEventListener('load',()=>{
+                let z = reader.result;
+                console.log(z);
+                localStorage.setItem('image',z);
+            });
+            if(image){
+                const y = reader.readAsDataURL(image);
+            }
+            const newImage = document.getElementById('img-from-local-storage');
+
+            newImage.src = localStorage.getItem('image');
+        });
+    </script>
+</body>
+</html>

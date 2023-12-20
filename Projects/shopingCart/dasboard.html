@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Dasboard</title>
+  <style>
+    .error{
+      background-color: red;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    .success{
+      background-color: green;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="cart.html" class="nav-link active" aria-current="page" href="#">Carts</a>
+            </li>
+            <li class="nav-item">
+              <a href="dasboard.html" class="nav-link active text-decoration-underline" aria-current="page" href="#">Dashboard</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Product From -->
+  <div class="container card card-body alertMessage mt-5">
+    <h2>Add Your Products</h2>
+    <form id="prductFrom">
+      <div>
+        <input type="text" id="title" class="form-control mb-3" placeholder="Product Title">
+      </div>
+      <input type="number" id="productPrice" class="form-control mb-3" placeholder="Product Price">
+      <input type="file" id="imageInput" class="mb-3 d-block">
+      <input type="submit" value="Submit" class="form-control" id="submitBtn">
+    </form>
+  </div>
+  <hr>
+  <!-- Product List -->
+  <div class="container card card-body mb-5">
+    <table class="align-items-center">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Image</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="productList">
+
+      </tbody>
+    </table>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <!-- User define JavaScript -->
+  <script src="JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "persons": [
+    {"name":"Akash","age":23,"home":"Dhaka", "married":false},
+    {"name":"Al-Amin","age":24,"home":"Dhaka", "married":false},
+    {"name":"Raju","age":28,"home":"Kushtia", "married":true},
+    {"name":"Rakib","age":20,"home":"Dhaka", "married":false}
+  ]
+}

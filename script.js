@@ -181,7 +181,7 @@
 // console.log(divi(100,5));
 
 // array iteration using map/forEach
-let fruit = ["apple","mango","banana","pineapple"];
+let fruit = ["apple", "mango", "banana", "pineapple"];
 let num = [3, 5, 9, 3, 55, 22];
 
 // // forEach
@@ -832,3 +832,22 @@ let num = [3, 5, 9, 3, 55, 22];
 // dob: ${dob}`);
 // }
 // test(...person);
+
+// ES-6 Refresher
+// var --> We can declear same name variable many time and also can reassign namy time 
+var x = 45;
+console.log(x);
+var x = 30;
+console.log(x);
+x = 10;
+console.log(x);
+
+// let --> We can't declear same name variable many time but we can reassign many time
+let a = 20;
+console.log(a);
+a = 5;
+console.log(a);
+
+// const --> We can't declear same name variable many time also can't reassign many time
+const pai = 3.1416;
+console.log(pai);

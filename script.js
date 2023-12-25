@@ -305,7 +305,7 @@ let num = [3, 5, 9, 3, 55, 22];
 // val = listItem;
 // val = list.parentElement;
 // val = listItem.parentNode; //305 & 306 are same
-// val = listItem.previousSibling; 
+// val = listItem.previousSibling;
 // val = listItem.previousElementSibling; //without text
 // val = listItem.previousElementSibling.previousElementSibling;
 
@@ -458,7 +458,7 @@ let num = [3, 5, 9, 3, 55, 22];
 // // character set with brackets []
 // re = /h[ea]llo/; //must be one of them inside brackets
 // re = /h[^ea]llo/; //anything except those inside brackets
-// re = /^[ha]llo/; //must start with h or a 
+// re = /^[ha]llo/; //must start with h or a
 // re = /[a-z]llo/; //any character in a to z range
 // re = /^[A-Z]/; //must start with A to Z
 // re = /[^A-F]/; //anything start without those word
@@ -656,7 +656,7 @@ let num = [3, 5, 9, 3, 55, 22];
 //   //   console.log(this.readyState);
 //   //   if(this.readyState===4 && this.status===200){
 //   //     console.log(this.responseText);
-//   //   } 
+//   //   }
 //   // }
 //   xhr.send();
 //   // console.log(xhr);
@@ -779,7 +779,7 @@ let num = [3, 5, 9, 3, 55, 22];
 //     })
 //     .then(function(data){
 //       // console.log(data); //get ajax type data
-//       console.log(data.value); 
+//       console.log(data.value);
 //     })
 //     .catch(function(err){
 //       console.log(`error: ${err}`);
@@ -833,21 +833,61 @@ let num = [3, 5, 9, 3, 55, 22];
 // }
 // test(...person);
 
-// ES-6 Refresher
-// var --> We can declear same name variable many time and also can reassign namy time 
-var x = 45;
-console.log(x);
-var x = 30;
-console.log(x);
-x = 10;
-console.log(x);
+// // ES-6 Refresher
+// // var --> We can declear same name variable many time and also can reassign namy time
+// var x = 45;
+// console.log(x);
+// var x = 30;
+// console.log(x);
+// x = 10;
+// console.log(x);
 
-// let --> We can't declear same name variable many time but we can reassign many time
-let a = 20;
-console.log(a);
-a = 5;
-console.log(a);
+// // let --> We can't declear same name variable many time but we can reassign many time
+// let a = 20;
+// console.log(a);
+// a = 5;
+// console.log(a);
 
-// const --> We can't declear same name variable many time also can't reassign many time
-const pai = 3.1416;
-console.log(pai);
+// // const --> We can't declear same name variable many time also can't reassign many time
+// const pai = 3.1416;
+// console.log(pai);
+
+// Aroow function shorcut
+// Normal arrow without paramitter
+// let saySomething = () => {
+//   console.log("I am Arrow");
+// }
+// let saySomething = itm => console.log(itm * itm);
+// saySomething(5);
+// let saySomething = itm => itm ** 3;
+// console.log(saySomething(5));
+
+// // inheritance
+// class Bikes {
+//   constructor(color, parts) {
+//     this.color = color;
+//     this.parts = parts;
+//   }
+// }
+// class Bike extends Bikes {
+//   constructor(newWheel, color, parts) {
+//     super(color, parts);
+//     this.wheel = newWheel;
+//   }
+// }
+// let obBike = new Bike(200, 'Black', "Gear Box");
+// console.log(obBike);
+
+// // Array Mapping
+// // Using callBack Function
+// let number = [1, 2, 3, 4, 5];
+// let square = number.map(function (itm) {
+//   return itm ** 2;
+// })
+// console.log(square);
+
+// // Using arrow function
+// let qube = number.map(itm => {
+//   return itm ** 3;
+// })
+// console.log(qube);
